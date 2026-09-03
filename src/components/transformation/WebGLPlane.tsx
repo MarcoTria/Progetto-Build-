@@ -55,8 +55,11 @@ const FRAGMENT = /* glsl */ `
     // enters from the right (spec: "AFTER architectural background
     // begins entering from the RIGHT").
     float edge = mix(1.15, -0.15, p);
+    // wipe is how much AFTER has been revealed: ~0 at p=0 (edge sits
+    // past the right side, nothing wiped yet) rising to ~1 at p=1 (edge
+    // has swept past the left side, fully revealed).
     float wipe = smoothstep(edge - 0.16, edge + 0.16, vUv.x);
-    vec3 color = mix(afterColor.rgb, beforeColor.rgb, wipe);
+    vec3 color = mix(beforeColor.rgb, afterColor.rgb, wipe);
 
     // Thin warm seam glow at the transition edge for a cinematic feel.
     float seam = 1.0 - smoothstep(0.0, 0.05, abs(vUv.x - edge));
