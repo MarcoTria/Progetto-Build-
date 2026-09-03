@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { asset } from "../lib/asset";
 
 const LINKS = [
   { href: "#work", label: "Projects" },
@@ -31,7 +32,7 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
         <a href="#top" className="flex items-center" aria-label="Progetto Build home">
           <img
-            src="/images/logo/mark-icon.png"
+            src={asset("/images/logo/mark-icon.png")}
             alt=""
             className="h-8 w-auto"
             width={44}

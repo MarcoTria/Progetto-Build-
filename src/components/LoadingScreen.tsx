@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useReducedMotion } from "../lib/useReducedMotion";
+import { asset } from "../lib/asset";
 
 /**
  * Short cinematic loader (spec §11): a mask reveal + blur-to-sharp pass on
@@ -37,7 +38,7 @@ export function LoadingScreen({ onDone }: { onDone: () => void }) {
     >
       <div className="overflow-hidden">
         <motion.img
-          src="/images/logo/lockup-full-white.png"
+          src={asset("/images/logo/lockup-full-white.png")}
           alt=""
           className="h-16 w-auto md:h-20"
           initial={{ y: "100%", filter: "blur(14px)", opacity: 0 }}

@@ -1,4 +1,5 @@
 import { BUSINESS } from "../data/projects";
+import { asset } from "../lib/asset";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -7,7 +8,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-10 md:flex-row">
         <div>
           <img
-            src="/images/logo/mark-icon.png"
+            src={asset("/images/logo/mark-icon.png")}
             alt="Progetto Build"
             className="h-9 w-auto"
             width={126}

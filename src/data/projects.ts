@@ -1,4 +1,5 @@
 import generated from "./renovations.generated.json";
+import { asset } from "../lib/asset";
 
 export type Pair = {
   label: string | null;
@@ -116,7 +117,11 @@ export const PROJECTS: Project[] = ORDER.map((slug) => ({
   room: META[slug].room,
   description: META[slug].description,
   strategy: META[slug].strategy,
-  pairs: g[slug].pairs,
+  // Resolve every generated photo path against the deployed base path
+  // once, here, so every component downstream (Hero, PhotoLayer,
+  // TransformationScene, WebGLPlane, GalleryTile, ...) gets a
+  // correctly-prefixed URL for free.
+  pairs: g[slug].pairs.map((p) => ({ ...p, before: asset(p.before), after: asset(p.after) })),
 }));
 
 /**
