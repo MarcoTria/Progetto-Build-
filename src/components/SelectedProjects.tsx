@@ -12,7 +12,7 @@ export function SelectedProjects() {
   return (
     <section id="work" className="bg-bg px-6 py-20 md:py-28">
       <SectionHeading
-        eyebrow="Selected Projects"
+        eyebrow="Selected Renovations"
         title="One house, room by room"
         description="Every photograph here is the actual jobsite and finished photography from this project — nothing staged, nothing stock."
       />

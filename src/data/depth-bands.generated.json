@@ -1,0 +1,254 @@
+{
+  "main-entryway": {
+    "before": {
+      "sourceDim": [
+        763,
+        896
+      ],
+      "bands": {
+        "bg": {
+          "src": "/images/renovations/main-entryway/depth/before-bg.jpg",
+          "yStart": 0.0,
+          "yEnd": 0.42,
+          "heightFrac": 0.42,
+          "centerFrac": 0.21,
+          "dim": [
+            763,
+            376
+          ]
+        },
+        "mid": {
+          "src": "/images/renovations/main-entryway/depth/before-mid.jpg",
+          "yStart": 0.3,
+          "yEnd": 0.74,
+          "heightFrac": 0.44,
+          "centerFrac": 0.52,
+          "dim": [
+            763,
+            394
+          ]
+        },
+        "fg": {
+          "src": "/images/renovations/main-entryway/depth/before-fg.jpg",
+          "yStart": 0.62,
+          "yEnd": 1.0,
+          "heightFrac": 0.38,
+          "centerFrac": 0.81,
+          "dim": [
+            763,
+            340
+          ]
+        }
+      }
+    },
+    "after": {
+      "sourceDim": [
+        766,
+        896
+      ],
+      "bands": {
+        "bg": {
+          "src": "/images/renovations/main-entryway/depth/after-bg.jpg",
+          "yStart": 0.0,
+          "yEnd": 0.42,
+          "heightFrac": 0.42,
+          "centerFrac": 0.21,
+          "dim": [
+            766,
+            376
+          ]
+        },
+        "mid": {
+          "src": "/images/renovations/main-entryway/depth/after-mid.jpg",
+          "yStart": 0.3,
+          "yEnd": 0.74,
+          "heightFrac": 0.44,
+          "centerFrac": 0.52,
+          "dim": [
+            766,
+            394
+          ]
+        },
+        "fg": {
+          "src": "/images/renovations/main-entryway/depth/after-fg.jpg",
+          "yStart": 0.62,
+          "yEnd": 1.0,
+          "heightFrac": 0.38,
+          "centerFrac": 0.81,
+          "dim": [
+            766,
+            340
+          ]
+        }
+      }
+    }
+  },
+  "backyard-pool": {
+    "before": {
+      "sourceDim": [
+        713,
+        937
+      ],
+      "bands": {
+        "bg": {
+          "src": "/images/renovations/backyard-pool/depth/before-bg.jpg",
+          "yStart": 0.0,
+          "yEnd": 0.42,
+          "heightFrac": 0.42,
+          "centerFrac": 0.21,
+          "dim": [
+            713,
+            394
+          ]
+        },
+        "mid": {
+          "src": "/images/renovations/backyard-pool/depth/before-mid.jpg",
+          "yStart": 0.3,
+          "yEnd": 0.74,
+          "heightFrac": 0.44,
+          "centerFrac": 0.52,
+          "dim": [
+            713,
+            412
+          ]
+        },
+        "fg": {
+          "src": "/images/renovations/backyard-pool/depth/before-fg.jpg",
+          "yStart": 0.62,
+          "yEnd": 1.0,
+          "heightFrac": 0.38,
+          "centerFrac": 0.81,
+          "dim": [
+            713,
+            356
+          ]
+        }
+      }
+    },
+    "after": {
+      "sourceDim": [
+        726,
+        937
+      ],
+      "bands": {
+        "bg": {
+          "src": "/images/renovations/backyard-pool/depth/after-bg.jpg",
+          "yStart": 0.0,
+          "yEnd": 0.42,
+          "heightFrac": 0.42,
+          "centerFrac": 0.21,
+          "dim": [
+            726,
+            394
+          ]
+        },
+        "mid": {
+          "src": "/images/renovations/backyard-pool/depth/after-mid.jpg",
+          "yStart": 0.3,
+          "yEnd": 0.74,
+          "heightFrac": 0.44,
+          "centerFrac": 0.52,
+          "dim": [
+            726,
+            412
+          ]
+        },
+        "fg": {
+          "src": "/images/renovations/backyard-pool/depth/after-fg.jpg",
+          "yStart": 0.62,
+          "yEnd": 1.0,
+          "heightFrac": 0.38,
+          "centerFrac": 0.81,
+          "dim": [
+            726,
+            356
+          ]
+        }
+      }
+    }
+  },
+  "game-room": {
+    "before": {
+      "sourceDim": [
+        760,
+        928
+      ],
+      "bands": {
+        "bg": {
+          "src": "/images/renovations/game-room/depth/before-bg.jpg",
+          "yStart": 0.0,
+          "yEnd": 0.42,
+          "heightFrac": 0.42,
+          "centerFrac": 0.21,
+          "dim": [
+            760,
+            390
+          ]
+        },
+        "mid": {
+          "src": "/images/renovations/game-room/depth/before-mid.jpg",
+          "yStart": 0.3,
+          "yEnd": 0.74,
+          "heightFrac": 0.44,
+          "centerFrac": 0.52,
+          "dim": [
+            760,
+            409
+          ]
+        },
+        "fg": {
+          "src": "/images/renovations/game-room/depth/before-fg.jpg",
+          "yStart": 0.62,
+          "yEnd": 1.0,
+          "heightFrac": 0.38,
+          "centerFrac": 0.81,
+          "dim": [
+            760,
+            353
+          ]
+        }
+      }
+    },
+    "after": {
+      "sourceDim": [
+        766,
+        928
+      ],
+      "bands": {
+        "bg": {
+          "src": "/images/renovations/game-room/depth/after-bg.jpg",
+          "yStart": 0.0,
+          "yEnd": 0.42,
+          "heightFrac": 0.42,
+          "centerFrac": 0.21,
+          "dim": [
+            766,
+            390
+          ]
+        },
+        "mid": {
+          "src": "/images/renovations/game-room/depth/after-mid.jpg",
+          "yStart": 0.3,
+          "yEnd": 0.74,
+          "heightFrac": 0.44,
+          "centerFrac": 0.52,
+          "dim": [
+            766,
+            409
+          ]
+        },
+        "fg": {
+          "src": "/images/renovations/game-room/depth/after-fg.jpg",
+          "yStart": 0.62,
+          "yEnd": 1.0,
+          "heightFrac": 0.38,
+          "centerFrac": 0.81,
+          "dim": [
+            766,
+            353
+          ]
+        }
+      }
+    }
+  }
+}

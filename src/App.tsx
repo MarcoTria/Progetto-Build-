@@ -3,7 +3,9 @@ import { LoadingScreen } from "./components/LoadingScreen";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { Intro } from "./components/Intro";
-import { FlagshipSection } from "./components/FlagshipSection";
+import { CinematicJourney } from "./components/cinematic/CinematicJourney";
+import { EditorialInterlude } from "./components/EditorialInterlude";
+import { CINEMATIC_PROJECTS } from "./data/cinematic";
 import { ServicesSection } from "./components/ServicesSection";
 import { ProcessSection } from "./components/ProcessSection";
 import { SelectedProjects } from "./components/SelectedProjects";
@@ -15,6 +17,7 @@ import { Footer } from "./components/Footer";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
+  const [journey01, journey02, journey03] = CINEMATIC_PROJECTS;
 
   return (
     <>
@@ -30,7 +33,17 @@ export default function App() {
       <main id="main">
         <Hero />
         <Intro />
-        <FlagshipSection />
+
+        <div id="journeys">
+          <CinematicJourney project={journey01} index={0} />
+          <EditorialInterlude
+            eyebrow="Progetto Build"
+            lines={["Design the vision.", "Build the reality."]}
+          />
+          <CinematicJourney project={journey02} index={1} />
+          <CinematicJourney project={journey03} index={2} />
+        </div>
+
         <ServicesSection />
         <ProcessSection />
         <SelectedProjects />

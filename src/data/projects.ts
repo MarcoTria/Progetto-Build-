@@ -118,9 +118,8 @@ export const PROJECTS: Project[] = ORDER.map((slug) => ({
   description: META[slug].description,
   strategy: META[slug].strategy,
   // Resolve every generated photo path against the deployed base path
-  // once, here, so every component downstream (Hero, PhotoLayer,
-  // TransformationScene, WebGLPlane, GalleryTile, ...) gets a
-  // correctly-prefixed URL for free.
+  // once, here, so every component downstream (Hero, CinematicJourney,
+  // GalleryTile, ...) gets a correctly-prefixed URL for free.
   pairs: g[slug].pairs.map((p) => ({ ...p, before: asset(p.before), after: asset(p.after) })),
 }));
 

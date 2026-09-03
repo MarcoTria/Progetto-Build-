@@ -13,13 +13,13 @@
 
 html {
   scroll-behavior: smooth;
-  background: #090909;
+  background: #0a0a0a;
 }
 
 body {
   margin: 0;
-  background: #090909;
-  color: #f4f1ea;
+  background: #0a0a0a;
+  color: #fafafa;
   font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -27,13 +27,13 @@ body {
 }
 
 ::selection {
-  background: #b8a486;
-  color: #090909;
+  background: #c6b59c;
+  color: #0a0a0a;
 }
 
 /* Visible, on-brand keyboard focus ring (UI/UX Pro Max: accessibility priority 1) */
 :focus-visible {
-  outline: 2px solid #cdbb9c;
+  outline: 2px solid #d8cab4;
   outline-offset: 3px;
   border-radius: 2px;
 }
