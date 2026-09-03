@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #faf7f2;
+  color: #0b0b0b;
+  font-family: "Josefin Sans", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #c9a24c;
+  color: #0b0b0b;
+}
+
+/* Visible, on-brand keyboard focus ring (UI/UX Pro Max: accessibility priority 1) */
+:focus-visible {
+  outline: 2px solid #c9a24c;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* Respect reduced-motion: kill scroll-jacking / parallax, keep content readable */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
