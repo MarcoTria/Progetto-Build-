@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 * {
@@ -12,26 +13,27 @@
 
 html {
   scroll-behavior: smooth;
+  background: #090909;
 }
 
 body {
   margin: 0;
-  background: #faf7f2;
-  color: #0b0b0b;
-  font-family: "Josefin Sans", ui-sans-serif, system-ui, sans-serif;
+  background: #090909;
+  color: #f4f1ea;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: #c9a24c;
-  color: #0b0b0b;
+  background: #b8a486;
+  color: #090909;
 }
 
 /* Visible, on-brand keyboard focus ring (UI/UX Pro Max: accessibility priority 1) */
 :focus-visible {
-  outline: 2px solid #c9a24c;
+  outline: 2px solid #cdbb9c;
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -46,7 +48,8 @@ img {
   user-select: none;
 }
 
-/* Respect reduced-motion: kill scroll-jacking / parallax, keep content readable */
+/* Respect reduced-motion: kill scroll-jacking / parallax / pinning, keep
+   content readable in its final, settled state. */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -67,4 +70,14 @@ img {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.perspective-container {
+  perspective: 1600px;
+  perspective-origin: 50% 50%;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }

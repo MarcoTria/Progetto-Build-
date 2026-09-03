@@ -4,38 +4,19 @@ export function SectionHeading({
   eyebrow,
   title,
   description,
-  light,
+  align = "center",
 }: {
   eyebrow: string;
   title: string;
   description?: string;
-  light?: boolean;
+  align?: "center" | "left";
 }) {
+  const wrap = align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-xl text-left";
   return (
-    <Reveal className="mx-auto max-w-2xl text-center">
-      <p
-        className={`font-body text-xs uppercase tracking-widest2 ${
-          light ? "text-gold-bright" : "text-gold-deep"
-        }`}
-      >
-        {eyebrow}
-      </p>
-      <h2
-        className={`mt-3 font-display text-3xl leading-tight md:text-5xl ${
-          light ? "text-white" : "text-ink"
-        }`}
-      >
-        {title}
-      </h2>
-      {description && (
-        <p
-          className={`mt-4 font-body text-base md:text-lg ${
-            light ? "text-white/70" : "text-ink-soft"
-          }`}
-        >
-          {description}
-        </p>
-      )}
+    <Reveal className={wrap}>
+      <p className="font-mono text-eyebrow uppercase tracking-widest3 text-gold">{eyebrow}</p>
+      <h2 className="mt-4 font-display text-h2 text-ink">{title}</h2>
+      {description && <p className="mt-5 text-base text-ink-soft">{description}</p>}
     </Reveal>
   );
 }

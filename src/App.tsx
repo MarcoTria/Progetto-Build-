@@ -1,29 +1,45 @@
+import { useState } from "react";
+import { LoadingScreen } from "./components/LoadingScreen";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
-import { TransformationsSection } from "./components/TransformationsSection";
-import { ProjectGrid } from "./components/ProjectGrid";
+import { Intro } from "./components/Intro";
+import { FlagshipSection } from "./components/FlagshipSection";
+import { ServicesSection } from "./components/ServicesSection";
 import { ProcessSection } from "./components/ProcessSection";
-import { CTASection } from "./components/CTASection";
+import { SelectedProjects } from "./components/SelectedProjects";
+import { BrandStatement } from "./components/BrandStatement";
+import { LeadCaptureSection } from "./components/LeadCaptureSection";
+import { AIProjectAssistant } from "./components/AIProjectAssistant";
+import { FinalCTA } from "./components/FinalCTA";
 import { Footer } from "./components/Footer";
 
 export default function App() {
+  const [loading, setLoading] = useState(true);
+
   return (
     <>
+      {loading && <LoadingScreen onDone={() => setLoading(false)} />}
+
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-sm focus:bg-gold-bright focus:px-4 focus:py-2 focus:text-ink"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-sm focus:bg-gold focus:px-4 focus:py-2 focus:text-bg"
       >
         Skip to content
       </a>
       <Navbar />
       <main id="main">
         <Hero />
-        <TransformationsSection />
-        <ProjectGrid />
+        <Intro />
+        <FlagshipSection />
+        <ServicesSection />
         <ProcessSection />
-        <CTASection />
+        <SelectedProjects />
+        <BrandStatement />
+        <LeadCaptureSection />
+        <FinalCTA />
       </main>
       <Footer />
+      <AIProjectAssistant />
     </>
   );
 }
